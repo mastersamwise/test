@@ -1,25 +1,23 @@
-
-<table class="leftNavMenu">
+<table class="leftNavMenu" width="150" cellspacing="1" cellpadding="1" border="1">
 	<tr>
-		<td>Home</td>
+		<td><a href="localhost:8080//springapp/WebContent/application/hello.jsp">Home</a></td>
 	</tr>
 	<tr>
-		<td>Events</td>
+		<td><a href="localhost:8080/springapp/WebContent/application/hello.jsp">Events</a></td>
 	</tr>
 	<tr>
-		<td>Members</td>
+		<td><a href="localhost:8080/springapp/WebContent/application/hello.jsp">Members</a></td>
 	</tr>
 	<tr>
-		<td>Sports</td>
+		<td><a href="localhost:8080/springapp/WebContent/application/hello.jsp">Crescent Girls</a></td>
 	</tr>
 	<tr>
-		<td>Resources</td>
+		<td><a href="localhost:8080/springapp/WebContent/application/hello.jsp">Sports</a></td>
 	</tr>
 	<tr>
-		<td>Item</td>
+		<td><a href="localhost:8080/springapp/WebContent/application/hello.jsp">Resources</a></td>
 	</tr>
 	<tr>
-		<td>Item</td>
+		<td><a href="localhost:8080/springapp/WebContent/application/hello.jsp">Item</a></td>
 	</tr>
-	
-</table>
+</table>	

@@ -1,7 +1,7 @@
 @CHARSET "ISO-8859-1";
 
-.mainContent{ width: 75%; }
-.leftNavMenu{ width: 25%; }
+.mainContent{ width: 75%; top: 150px; }
+.leftNavMenu{ width: 25%; top: 150px; }
 
 <!-- Input fields -->
 .inputField{ width: 75px; }
