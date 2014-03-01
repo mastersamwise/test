@@ -1,7 +1,9 @@
 package springapp.web;
 
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.view.RedirectView;
 
@@ -23,6 +25,7 @@ public class PriceIncreaseFormController {
 
     private ProductManager productManager;
 
+    @RequestMapping(value="priceIncrease", method=RequestMethod.POST)
     public ModelAndView onSubmit(Object command) throws ServletException {
 
         int increase = ((PriceIncrease) command).getPercentage();
@@ -30,9 +33,9 @@ public class PriceIncreaseFormController {
 
         productManager.increasePrice(increase);
 
-        logger.info("returning from PriceIncreaseForm view to " + getSuccessView());
+        logger.info("returning from PriceIncreaseForm view to hello.jsp");
 
-        return new ModelAndView(new RedirectView(getSuccessView()));
+        return new ModelAndView("hello");
     }
 
     protected Object formBackingObject(HttpServletRequest request) throws ServletException {

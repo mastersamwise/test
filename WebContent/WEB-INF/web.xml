@@ -11,27 +11,35 @@
   		 xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
   		 	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
   		 version="2.5">
+  		 
+  	<!-- <listener>
+    	<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>-->
 
-	<servlet>
-    <servlet-name>springapp</servlet-name>
-    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
-    <load-on-startup>1</load-on-startup>
-  </servlet>
+  	<servlet>
+	    <servlet-name>springapp</servlet-name>
+	    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+	    <load-on-startup>1</load-on-startup>
+  	</servlet>
 
-  <servlet-mapping>
-    <servlet-name>springapp</servlet-name>
-    <url-pattern>*.do</url-pattern>
-  </servlet-mapping>
+  	<servlet-mapping>
+	    <servlet-name>springapp</servlet-name>
+	    <url-pattern>*.do</url-pattern>
+  	</servlet-mapping>
 
-  <welcome-file-list>
-  	<welcome-file>index.jsp</welcome-file>
-  </welcome-file-list>
+  	<welcome-file-list>
+  		<welcome-file>index.jsp</welcome-file>
+  	</welcome-file-list>
   
-  <jsp-config>
-    <taglib>
-      <taglib-uri>/spring</taglib-uri>
-      <taglib-location>/WEB-INF/lib/spring-webmvc-4.0.0.RELEASE.jar</taglib-location>
-    </taglib>
-  </jsp-config>
-
+  	<jsp-config>
+    	<taglib>
+      		<taglib-uri>/spring</taglib-uri>
+      		<taglib-location>/WEB-INF/lib/spring-webmvc-4.0.0.RELEASE.jar</taglib-location>
+    		</taglib>
+  	</jsp-config>
+  	<!-- 
+  	<listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener> -->
+  
 </web-app>

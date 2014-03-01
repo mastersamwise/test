@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Welcome to LXA Home Page</title>
 </head>
-<body>
+<body bgcolor="#E6E6FA">
 
 	<table cellspacing="1" cellpadding="1" border="2">
 	
