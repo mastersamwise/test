@@ -12,7 +12,7 @@
   		 	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
   		 version="2.5">
   		 
-  	<!-- <listener>
+  	<!--  <listener>
     	<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>-->
 
@@ -24,7 +24,7 @@
 
   	<servlet-mapping>
 	    <servlet-name>springapp</servlet-name>
-	    <url-pattern>*.do</url-pattern>
+	    <url-pattern>/</url-pattern>
   	</servlet-mapping>
 
   	<welcome-file-list>
@@ -37,9 +37,9 @@
       		<taglib-location>/WEB-INF/lib/spring-webmvc-4.0.0.RELEASE.jar</taglib-location>
     		</taglib>
   	</jsp-config>
-  	<!-- 
-  	<listener>
+  	
+  	<!-- <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
-    </listener> -->
+    </listener>--> 
   
 </web-app>

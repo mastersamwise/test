@@ -14,7 +14,7 @@
   <!-- the application context definition for the springapp DispatcherServlet -->
 
 	<mvc:annotation-driven />
-	<context:component-scan base-package="springapp.web" />
+	<context:component-scan base-package="springapp.test" />
 
 	<bean id="productManager" class="springapp.service.SimpleProductManager">
         <property name="products">
@@ -25,7 +25,9 @@
             </list>
         </property>
     </bean>
-
+	<bean id="priceIncrease" class="springapp.service.PriceIncrease">
+		<property name="percentage" value="0"></property>
+	</bean>
     <bean id="product1" class="springapp.domain.Product">
         <property name="description" value="Lamp"/>
         <property name="price" value="5.75"/>
@@ -47,6 +49,11 @@
 
 	<bean name="/hello.do" class="springapp.web.InventoryController">
         <property name="productManager" ref="productManager"/>
+    </bean>
+    
+    <bean name="/priceincrease.do" class="springapp.web.PriceIncreaseFormController">
+    	<property name="productManager" ref="productManager"/>	
+    	<property name="priceIncrease" ref="priceIncrease"/>
     </bean>
     
     <!-- <bean name="/priceincrease.do" class="springapp.web.PriceIncreaseFormController">

@@ -22,5 +22,7 @@
     <a href="<c:url value="application/priceincrease.jsp"/>">Increase Prices</a>
     <br>
     <!-- <a href="localhost:8080/springapp/WebContent/application/signup.jsp">Sign up</a> -->
-    <a href="application/signup.jsp">Sign up</a>
+    <a href="/springapp/application/signup.jsp">Sign up</a>
+    <br>
+    <a href="/springapp/application/members.jsp">Current Members</a>
 </html>

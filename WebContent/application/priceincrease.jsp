@@ -10,7 +10,7 @@
 </head>
 <body bgcolor="#E6E6FA">
 <h1><fmt:message key="priceincrease.heading"/></h1>
-<form:form method="post" action="priceIncrease">
+<form:form method="post" action="/priceincrease">
   	<table width="95%" bgcolor="f8f8ff" border="0" cellspacing="0" cellpadding="5">
 		<tr>
 	      	<td align="right" width="20%">Increase (%):</td>
